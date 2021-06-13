@@ -42,12 +42,12 @@ public class ProjMain {
 				
 				
 				String fileName = br.readLine();
-				if(Pattern.matches("[a-zA-Z0-9]{6}(.txt)", fileName)) {
+				if(Pattern.matches("[a-zA-Z]{6}(.txt)", fileName)) {
 				AddFile file = new AddFile(fileName,path);
 				file.createWrite();
 				}else {
 					
-					System.out.println("Alphanumeric File names allowed upto 6 characters with extension .txt e.g (jack12.txt)");
+					System.out.println("Alphabetic File names allowed upto 6 characters with extension .txt e.g (jackie.txt)");
 				}
 				
 					break;
